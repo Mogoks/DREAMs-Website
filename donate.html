@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DREAMs RSA - Home</title>
+  <title>DREAMs RSA - Donate</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,25 +28,22 @@
 
   <!-- Main content -->
   <main>
-    <section id="mission-statement">
-      <h2>Mission Statement</h2>
-      <p>Our mission is to empower communities through sustainable programs and innovative projects.</p>
-    </section>
-
-    <section id="image-section">
-      <h2>Our Community in Action</h2>
-      <img src="https://via.placeholder.com/800x400" alt="Community Engagement">
-    </section>
-
-    <section id="call-to-action">
-      <h2>Join Us!</h2>
-      <p>Be a part of our journey to create lasting change.</p>
-      <a href="donate.html" class="btn">Donate Now</a>
-    </section>
-
-    <section id="highlights">
-      <h2>Highlights</h2>
-      <p>Celebrating the impactful projects and milestones achieved by our community.</p>
+    <section id="payment-method">
+      <h2>Donate</h2>
+      <p>Your support makes a difference. Please use one of the secure payment methods below.</p>
+      <form>
+        <label for="donation-amount">Donation Amount:</label>
+        <input type="number" id="donation-amount" name="donation-amount" placeholder="Enter amount">
+        
+        <label for="payment-option">Payment Method:</label>
+        <select id="payment-option" name="payment-option">
+          <option value="card">Credit/Debit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank">Bank Transfer</option>
+        </select>
+        
+        <button type="submit" class="btn">Donate</button>
+      </form>
     </section>
   </main>
 
