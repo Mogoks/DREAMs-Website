@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DREAMs RSA - Events</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header with navigation -->
-  <header>
-    <div class="container header-container">
-      <h1 class="logo"><a href="index.html">DREAMs RSA</a></h1>
-      <button id="menu-toggle" class="menu-toggle">&#9776;</button>
-      <nav id="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="programs.html">Programs/Projects</a></li>
-          <li><a href="donate.html">Donate</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DREAMs RSA - Events</title>
+    <!-- Main site CSS and events-specific CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="events.css" />
+  </head>
+  <body>
+    <!-- Header with navigation -->
+    <header>
+      <div class="container header-container">
+        <h1 class="logo"><a href="index.html">DREAMs RSA</a></h1>
+        <button id="menu-toggle" class="menu-toggle">&#9776;</button>
+        <nav id="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs/Projects</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Calendar Section -->
+      <section id="calendar-section">
+        <h2>Upcoming Events</h2>
+        <div id="calendar">
+          <!-- Calendar Header -->
+          <div class="calendar-header">
+            <button id="prev-month">&lt;</button>
+            <h3 id="month-year"></h3>
+            <button id="next-month">&gt;</button>
+          </div>
+          <!-- Days-of-week -->
+          <div class="calendar-weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <!-- Calendar Days -->
+          <div id="calendar-days" class="calendar-days"></div>
+        </div>
+      </section>
+
+      <!-- Past Events Section -->
+      <section id="past-events">
+        <h2>Past Event Recaps</h2>
+        <p>Review recaps and highlights from our previous events.</p>
+      </section>
+
+      <!-- RSVP Section -->
+      <section id="rsvp-links">
+        <h2>RSVP Links</h2>
+        <p>Register now and be part of our future events.</p>
+        <a href="#" class="btn">RSVP Now</a>
+      </section>
+    </main>
+
+    <!-- Modal Popup -->
+    <div id="event-popup" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3 id="popup-event-title"></h3>
+        <p id="popup-event-description"></p>
+        <a href="contact.html" class="btn">Follow link to join US</a>
+      </div>
     </div>
-  </header>
 
-  <!-- Main content -->
-  <main>
-    <section id="upcoming-events">
-      <h2>Upcoming Events</h2>
-      <p>Find out about our upcoming community events and workshops.</p>
-    </section>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 DREAMs RSA. All rights reserved.</p>
+    </footer>
 
-    <section id="past-events">
-      <h2>Past Event Recaps</h2>
-      <p>Review recaps and highlights from our previous events.</p>
-    </section>
-
-    <section id="rsvp-links">
-      <h2>RSVP Links</h2>
-      <p>Register now and be part of our future events.</p>
-      <a href="#" class="btn">RSVP Now</a>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 DREAMs RSA. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- External JavaScript -->
+    <script src="calendar.js"></script>
+  </body>
 </html>
